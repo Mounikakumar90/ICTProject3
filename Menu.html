@@ -1,0 +1,338 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script type="text/javascript" src="jquery-1.12.3.min"></script>
+<title>Restuarant</title>
+
+</head>
+
+<body>
+<script type="text/javascript">
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+</script>
+	<div id="header">
+	
+	<div id="nav">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+					<li>
+                        <a href="contact.html"><span>Contact</span></a>
+                    </li>
+                </ul>         
+            </div>
+		</div>
+		<div id="imagebar">
+			<img  class="imagebar" src="dosa.jpg"/> 
+		</div>
+		
+		<div id="apetizers">
+		<table width="100%">
+			<tr>
+				<td>
+					<tr>
+						<td class="category">Apetizers</td>
+					</tr>
+				</td>
+			</tr>
+		</table>
+		</div>
+		
+		<div id="apetizerlist">
+			<table align="center" width="70%">
+			    <col width="50%"/>
+				<col width="50%"/>
+				<tr>
+					
+					<td>
+						<table>
+						<tr>
+							<td ><img  class="masterTooltip menuimage" src="menu/chickenlolipop.jpg" title="This item has 120 Cal"/></td>
+						 	<td>
+							 <table>
+								 <tr class="itemhead"> <td>Chicken Lolipop </td> <td>$4 </td></tr>
+							     <tr class="itemdesc"> <td colspan="2">fried chicken legs subtly spicy </td></tr>       
+						 	 </table>
+						 	</td>
+					 	</tr>
+				 		</table>
+					</td> 
+					
+					<td>
+						<table>
+							<tr>
+								<td > <img  class="menuimage masterTooltip" src="menu/prawn-fry.jpg" title="This item has 120 Cal"/> </td>
+						 		<td>
+							 	<table>
+									 <tr class="itemhead"> <td>Fried Shrimp </td> <td>$7 </td></tr>
+							     	<tr class="itemdesc"> <td colspan="2">Shrimp fried and made so crispy and served with tomato ketchup </td></tr>       
+						 	 	</table>
+						 		</td>
+					 		</tr>
+						</table>
+					</td>
+					
+				</tr>
+		</table>
+		</div>
+		<div id="maincourse">
+		<table width="100%">
+			<tr>
+				<td>
+					<tr>
+						<td class="category">Main course</td>
+					</tr>
+				</td>
+			</tr>
+		</table>
+		</div>
+		
+		<div id="maincourselist">
+			<table align="center" width="70%">
+				<col width="50%"/>
+				<col width="50%"/>
+				<tr>
+					
+					<td>
+						<table>
+						<tr>
+							<td ><img  class="menuimage masterTooltip" src="menu/chickenbiriyani.jpg" title="This item has 340 Cal"/></td>
+						 	<td>
+							 <table>
+								 <tr class="itemhead"> <td>Chicken biryani  </td> <td>$12 </td></tr>
+							     <tr class="itemdesc"> <td colspan="2">Basmathi Rice cooked with  fried onions, with all special spices and tender slices of chicken
+								 </td></tr>       
+						 	 </table>
+						 	</td>
+					 	</tr>
+				 		</table>
+					</td> 
+					
+					<td>
+						<table>
+							<tr>
+								<td ><img  class="menuimage masterTooltip" src="menu/muttonbiriyani.jpg" title="This item has 450 Cal"/></td>
+						 		<td>
+								 <table>
+									 <tr class="itemhead"> <td>Mutton biriyani </td> <td>$14 </td></tr>
+							    	 <tr class="itemdesc"> <td colspan="2">Basmathi Rice cooked with  fried onions, with all special spices and tender slices of lamb </td></tr>       
+						 		 </table>
+						 		</td>
+					 		</tr>
+						</table>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					
+					<td>
+						<table>
+						<tr>
+							<td ><img  class="menuimage masterTooltip" src="menu/butternaan.jpg" title="This item has 40 Cal"/></td>
+						 	<td>
+							 <table>
+								 <tr class="itemhead"> <td>Butter Naan  </td> <td>$2 </td></tr>
+							     <tr class="itemdesc"> <td colspan="2">Flat bread baked on griddle and coated with thin layer of butter
+								 </td></tr>       
+						 	 </table>
+						 	</td>
+					 	</tr>
+				 		</table>
+					</td> 
+					
+					<td>
+						<table>
+							<tr>
+								<td ><img  class="menuimage masterTooltip" src="menu/garlicnaan.jpg" title="This item has 40 Cal"/></td>
+						 		<td>
+								 <table>
+									 <tr class="itemhead"> <td>Garlic Naan  </td> <td>$2 </td></tr>
+									 <tr class="itemdesc"> <td colspan="2">Flat bread baked on griddle with shredded garlic topping     
+						 		 </table>
+						 		</td>
+					 		</tr>
+						</table>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					
+					<td>
+						<table>
+						<tr>
+							<td ><img  class="menuimage masterTooltip" src="menu/gonguramutton.jpg" title="This item has 250 Cal"/></td>
+						 	<td>
+							 <table>
+								 <tr class="itemhead"> <td>Gongura Mutton  </td> <td>$8 </td></tr>
+							     <tr class="itemdesc"> <td colspan="2">lamb gravy cooked with rosella leaves; gives tangy  and spicy taste
+								 </td></tr>       
+						 	 </table>
+						 	</td>
+					 	</tr>
+				 		</table>
+					</td> 
+					
+					<td>
+						<table>
+							<tr>
+								<td ><img  class="menuimage masterTooltip" src="menu/butterchicken.jpg" title="This item has 250 Cal""/></td>
+						 		<td>
+								 <table>
+									 <tr class="itemhead"> <td>Butter Chicken  </td> <td>$7 </td></tr>
+									 <tr class="itemdesc"> <td colspan="2">Tender pieces of chicken cooked in spices and topped with butter     
+						 		 </table>
+						 		</td>
+					 		</tr>
+						</table>
+					</td>
+					
+				</tr>
+				
+		</table>
+	</div>
+	
+		<div id="desserts">
+		<table width="100%">
+			<tr>
+				<td>
+					<tr>
+						<td class="category">Desserts</td>
+					</tr>
+				</td>
+			</tr>
+		</table>
+		</div>
+		
+		<div id="dessertlist">
+			<table align="center" width="70%">
+			    <col width="50%"/>
+				<col width="50%"/>
+				<tr>
+					
+					<td>
+						<table>
+						<tr>
+							<td ><img  class="menuimage masterTooltip" src="menu/gajar.jpg" title="This item has 150 Cal"/></td>
+						 	<td>
+							 <table>
+								 <tr class="itemhead"> <td>Gajar ja halwa </td> <td>$4 </td></tr>
+							     <tr class="itemdesc"> <td colspan="2">Halwa made with shredded carrot, more butter and roasted dry fruits
+								 </td></tr>       
+						 	 </table>
+						 	</td>
+					 	</tr>
+				 		</table>
+					</td> 
+					
+					<td>
+						<table>
+							<tr>
+								<td ><img  class="menuimage masterTooltip" src="menu/DoubleMeetha.jpg" title="This item has 180 Cal"/></td>
+						 		<td>
+							 	<table>
+									 <tr class="itemhead"> <td>Double ka meeta </td> <td>$4 </td></tr>
+							     	<tr class="itemdesc"> <td colspan="2">The favourite dessert of nawabs is cooked with sliced bread, butter, milk and dry fruits
+									</td></tr>       
+						 	 	</table>
+						 		</td>
+					 		</tr>
+						</table>
+					</td>
+					
+				</tr>
+		</table>
+	</div>
+	
+		<div id="apetizers">
+		<table width="100%">
+			<tr>
+				<td>
+					<tr>
+						<td class="category">Others</td>
+					</tr>
+				</td>
+			</tr>
+		</table>
+		</div>
+		
+		<div id="dessertlist">
+			<table align="center" width="70%">
+			    <col width="50%"/>
+				<col width="50%"/>
+				<tr>
+					
+					<td>
+						<table>
+						<tr>
+							<td ><img  class="menuimage masterTooltip" src="menu/hotchai.jpg" title="This item has 20 Cal"/></td>
+						 	<td>
+							 <table>
+								 <tr class="itemhead"> <td>Hot chai </td> <td>$2 </td></tr>
+							     <tr class="itemdesc"> <td colspan="2">Hot tea served with milk; aids in degestion and a stress reliever
+								 </td></tr>       
+						 	 </table>
+						 	</td>
+					 	</tr>
+				 		</table>
+					</td> 
+					
+					<td>
+						<table>
+							<tr>
+								<td ><img  class="menuimage masterTooltip" src="menu/samosachat.jpg" title="This item has 60 Cal"/></td>
+						 		<td>
+							 	<table>
+									 <tr class="itemhead"> <td>Samosa chat </td> <td>$3 </td></tr>
+							     	<tr class="itemdesc"> <td colspan="2">Potatoes flavored with cumin is stuffed and baked served with midly spiced chickpeas , garnished with tamarind sauce , yogurt.
+									</td></tr>       
+						 	 	</table>
+						 		</td>
+					 		</tr>
+						</table>
+					</td>
+					
+				</tr>
+		</table>
+	</div>
+				
+     <hr />       
+		<!--End Main Container -->
+        <div id="main">
+		
+		<p>Opening hours Monday - friday : 11:00AM - 10PM; <br />
+			saturday & sunday : 10:00AM - 11PM;</p>
+		</div>
+		 <script src="footer.js" type="text/javascript"></script> 
+	 </div>
+    </nav>
+	
+</body>
+</html>

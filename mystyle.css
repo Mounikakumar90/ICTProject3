@@ -1,0 +1,179 @@
+body {
+    background-color: #F8E0E6;
+}
+
+#header{
+	border : 1px solid black;
+	width : 100%;
+	height : 60px;
+	background-color: black;
+	text-align: center;
+	
+}
+#wrapper{
+	
+	width : 100%;
+	
+	height : auto;
+}
+#intro{
+	
+	width : 100%;
+	text-align: left;
+	background-color: #424242;
+	font-size: 20px;
+	color:white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-top: 4px;
+	
+	
+}
+#main{
+	width : 100%;
+	
+}
+p{
+	text-align: center;
+	font-family: verdana;
+	font-size: 20px;
+}
+#mailer{
+	font-family: verdana;
+	font-size: 20px;
+}
+#footer{
+	height:60px;
+	width : 100%;
+	
+	text-align: center;
+	background-color: darkgreen;
+	font-size: 20px;
+	
+}
+#header #nav ul li{ list-style-type: none;
+display: inline;
+padding : 3px 8px 3px 8px;
+text-color: white;
+font-size: 30px;
+}
+#header #nav a{
+	text-decoration: none;
+	color: white;
+}
+
+
+#header #nav a:hover{
+	color: yellow;
+}
+
+#header #nav a:active{
+	color: red;
+}
+
+	input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #2E64FE;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #013ADF;
+}
+
+.imagebar {
+	width : 100%;
+	height : 300;
+}
+.tooltip {
+	display:none;
+	position:absolute;
+	border:10px solid #333;
+	background-color:#FF8D33;
+	border-radius:10px;
+	padding:20px;
+	color:#fff;
+	font-size:12px Arial;
+}
+.category {
+	background-color: #819FF7;
+	text-align: center;
+	font-family: verdana;
+	font-size: 25px;
+	color:white;
+}
+
+.menuimage {
+	width : 150px;
+	height : 150px;
+}
+
+.letf-column{
+	float: right;
+}
+.right-column{
+	float: left;
+}
+
+.itemdesc{
+	font-style: italic;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.itemhead{
+	font-family:"Lucida Console", Monaco, monospace;
+	font-weight: bold;
+}
+
+.subhead{
+	font-family:"Lucida Console", Monaco, monospace;
+	font-size: 200%;
+	font-weight: 900;
+	color: #B40404;
+	text-align: bottom;
+}
+
+.desc{
+	font-style: normal;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #A9F5A9;
+}
+
+#signupform{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 4px;
+} 
+
+.tooltip{
+        position:absolute;
+        margin:5px;
+        width:200px;
+        height:100px;
+        border:1px solid black;
+        display:none;
+    }
